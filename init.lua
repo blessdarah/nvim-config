@@ -10,5 +10,6 @@ require('treesitter-refactor-config')
 require('telescope-config')
 require('nvim-autopairs').setup{}
 require('lualine').setup()
-require('bufferline-config')
+-- require('bufferline-config')
 require("commentary").setup({})
+require('nvim-terminal-config')

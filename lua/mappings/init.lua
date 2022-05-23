@@ -33,4 +33,8 @@ map('n', ',f', ':Telescope find_files<CR>', opts)
 map('n', ',r', ':Telescope live_grep<CR>', opts)
 map('n', ',b', ':Telescope buffers<CR>', opts)
 
-
+-- nvim terminal key binding
+map('n', '<leader>t', ':lua NTGlobal["terminal"]:toggle()<cr>', opts)
+map('n', '<leader>1', ':lua NTGlobal["terminal"]:open(1)<cr>', opts)
+map('n', '<leader>+', ':lua NTGlobal["window"]:change_height(2)<cr>', opts)
+map('n', '<leader>-', ':lua NTGlobal["window"]:change_height(-2)<cr>', opts)

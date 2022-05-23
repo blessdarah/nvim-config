@@ -44,4 +44,13 @@ return require('packer').startup(function()
 
   -- using packer.nvim
   use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
+  -- Terminal
+  use {
+    's1n7ax/nvim-terminal',
+    config = function()
+        vim.o.hidden = true
+        require('nvim-terminal').setup()
+    end,
+  }
 end)
