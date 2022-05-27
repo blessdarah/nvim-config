@@ -12,8 +12,19 @@ end
 -- Setup nvim-cmp.
   local cmp = require'cmp'
 
-
   cmp.setup({
+formatting = {
+  format = require('lspkind').cmp_format({
+    mode = "symbol_text",
+    menu = ({
+      buffer = "[Buffer]",
+      nvim_lsp = "[LSP]",
+      luasnip = "[LuaSnip]",
+      nvim_lua = "[Lua]",
+      latex_symbols = "[Latex]",
+    })
+  }),
+},
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)

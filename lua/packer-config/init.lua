@@ -17,9 +17,12 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'neovim/nvim-lspconfig'
+  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
+
+  use 'williamboman/nvim-lsp-installer'
 
  --For vsnip users.
   use 'hrsh7th/cmp-vsnip'
@@ -53,4 +56,14 @@ return require('packer').startup(function()
         require('nvim-terminal').setup()
     end,
   }
+  
+
+  use "lukas-reineke/lsp-format.nvim"
+  use "glepnir/indent-guides.nvim"
+
+  use "lukas-reineke/indent-blankline.nvim"
+
+  use 'glepnir/dashboard-nvim'
+
+  use 'vim-ctrlspace/vim-ctrlspace'
 end)
