@@ -27,6 +27,8 @@ if not configs.ls_emmet then
         'sss',
         'hbs',
         'handlebars',
+        'blade',
+        'php'
       };
       root_dir = function(fname)
         return vim.loop.cwd()
@@ -37,4 +39,5 @@ if not configs.ls_emmet then
 end
 
 lspconfig.ls_emmet.setup { capabilities = capabilities }
+
 

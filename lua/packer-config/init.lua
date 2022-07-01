@@ -66,4 +66,23 @@ return require('packer').startup(function()
   use 'glepnir/dashboard-nvim'
 
   use 'vim-ctrlspace/vim-ctrlspace'
+
+  use {
+      'phaazon/hop.nvim',
+      branch = 'v1', -- optional but strongly recommended
+      config = function()
+        -- you can configure Hop the way you like here; see :h hop-config
+        require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+      end
+  }
+
+  -- Vim wiki
+  use 'vimwiki/vimwiki'
+
+  use 'mattn/emmet-vim'
+
+  use 'jwalton512/vim-blade'
+
+  use 'tpope/vim-abolish'
+
 end)

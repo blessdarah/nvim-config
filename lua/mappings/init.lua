@@ -3,7 +3,14 @@ local opts = {noremap = true, silent = true}
 
 vim.g.mapleader = ','
 
+-- emmet config
+vim.g.user_emmet_leader_key=','
+
+
 map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', opts)
+map('n', '<leader>v', ':HopWord<CR>', opts)
+map('n', '<leader>l', ':HopLine<CR>', opts)
+map('n', '<space>c', ':HopChar1<CR>', opts)
 
 -- REMAP ESC KEY
 
@@ -21,7 +28,7 @@ map('v', 'K', ":m '<-2<CR>gv=gv", opts)
 
 	-- clear default highlight after searching a string
 map('n', ',c', ':nohlsearch<CR>', opts)
-map('n', ',w', ':w<CR>', opts)
+map('n', ',w', ':wa!<CR>', opts)
 
 	-- create new lines before and after line respectively
 map('n', 'oo', 'o<Esc>k', opts)
@@ -41,5 +48,8 @@ map('n', '<leader>-', ':lua NTGlobal["window"]:change_height(-2)<cr>', opts)
 
 
 -- Exit from terminal in insert mode
-map('i', ',,', '<C-\\><C-n>', opts)
+-- map('i', ',,', '<C-\\><C-n>', opts)
+-- map('i', ',,', '<C-\\><C-n>', opts)
+
+
 
