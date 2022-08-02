@@ -26,11 +26,11 @@ map('v', 'J', ":m '>+1<CR>gv=gv", opts)
 map('v', 'K', ":m '<-2<CR>gv=gv", opts)
 
 
-	-- clear default highlight after searching a string
+-- clear default highlight after searching a string
 map('n', ',c', ':nohlsearch<CR>', opts)
 map('n', ',w', ':wa!<CR>', opts)
 
-	-- create new lines before and after line respectively
+-- create new lines before and after line respectively
 map('n', 'oo', 'o<Esc>k', opts)
 map('n', 'OO', 'O<Esc>j', opts)
 map('n', ',n', 'i<CR><Esc>', opts)
