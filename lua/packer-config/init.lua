@@ -1,6 +1,6 @@
 return require('packer').startup(function()
-  use 'wbthomason/packer.nvim'
-  use "EdenEast/nightfox.nvim" -- Packer
+  use 'wbthomason/packer.nvim' -- Packer
+  use "EdenEast/nightfox.nvim" -- Color theme
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -27,6 +27,11 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin 
   use 'onsails/lspkind.nvim' -- Show icons on popup
+
+  -- PHP config
+  use 'tree-sitter/tree-sitter-php'
+  -- End php config
+
 
   use {
       'nvim-telescope/telescope.nvim',
