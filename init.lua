@@ -1,5 +1,6 @@
 require('settings')
 require('mappings')
+require('gruvbox-config')
 require('colorscheme-config')
 require('packer-config')
 require('nvim-tree-config')
@@ -24,3 +25,4 @@ require('vim-ctrlspace-config')
 require('vim-blade-config')
 -- require('lsp-config-ts-utils')
 require('hop-config')
+

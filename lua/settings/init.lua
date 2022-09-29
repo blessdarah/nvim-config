@@ -23,4 +23,5 @@ set.mouse=a
 set.hidden=true
 
 -- set.guifont ={"FiraCode", "h12"}
-set.guifont ={"Fira Code", "h12"}
+set.guifont ={"Fira Code", "h13"}
+

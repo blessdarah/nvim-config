@@ -75,15 +75,13 @@ return require('packer').startup(function()
         -- you can configure Hop the way you like here; see :h hop-config
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
-  }
+    } 
 
-  -- Vim wiki
-  use 'vimwiki/vimwiki'
-
-  use 'mattn/emmet-vim'
-
-  use 'jwalton512/vim-blade'
-
-  use 'tpope/vim-abolish'
-
+      
+    use 'vimwiki/vimwiki'                                   -- Vim wiki
+    use 'mattn/emmet-vim'
+    use 'jwalton512/vim-blade'
+    use 'tpope/vim-abolish'
+    
+    use { "ellisonleao/gruvbox.nvim" }                      -- gruvbox color theme
 end)
