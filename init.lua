@@ -1,3 +1,3 @@
-require("lua.config.settings")
-require("lua.config.keymaps")
-require("lua.lazy")
+-- require("lua.config.settings")
+--require("lua.config.keymaps")
+require("lazy-vim")
