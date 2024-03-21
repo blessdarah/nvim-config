@@ -10,5 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+require("autoload.settings")
+require("autoload.keymaps")
 require("lazy").setup("plugins")
 
