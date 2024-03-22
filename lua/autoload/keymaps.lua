@@ -1,6 +1,6 @@
 vim.g.mapleader = ","
 -- vim.g.indent_guides_enable_on_vim_startup = 1
-local keymap = vim.keymap 
+local keymap = vim.keymap
 
 -- disable netrw
 vim.g.loaded_netrw = 1
@@ -44,11 +44,6 @@ keymap.set("n", ",r", ":Telescope live_grep<CR>")
 keymap.set("n", ",b", ":Telescope buffers<CR>")
 
 -- nvim terminal key binding
--- keymap.set("n", "<leader>t", ':lua NTGlobal["terminal"]:toggle()<cr>')
--- keymap.set("n", "<leader>1", ':lua NTGlobal["terminal"]:open(1)<cr>')
--- keymap.set("n", "<leader>+", ':lua NTGlobal["window"]:change_height(2)<cr>')
--- keymap.set("n", "<leader>-", ':lua NTGlobal["window"]:change_height(-2)<cr>')
--- keymap.set("t", ";;", "<C-\\><C-n>") -- Map ;; to escape terminal mode
 
 -- local dap = require("dap")
 --
@@ -77,7 +72,7 @@ end, { expr = true, silent = true })
 -- imap <C-x>   <Cmd>call codeium#Clear()<CR>
 
 -- Neogit plugin
--- vim.keymap.set("n", "<leader>ng", ":Neogit kind=split<CR>")
+vim.keymap.set("n", "<leader>ng", ":Neogit kind=split<CR>")
 -- vim.keymap.set("n", "<leader>ngf", ":Neogit kind=floating<CR>")
 
 -- Folding with ufo

@@ -12,7 +12,9 @@ return {
 			python = { "isort", "black" },
 			-- Use a sub-list to run only the first available formatter
 			javascript = { { "prettierd", "prettier" } },
-			php = { { "intelephense", "tlint", "blade-formatter" } },
+			php = { "intelephense", "tlint" },
+			blade = { "blade-formatter", "pretty-php", "intelephense", "tlint" },
+			sql = { "sql-formatter" },
 		},
 	},
 }
