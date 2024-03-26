@@ -71,10 +71,6 @@ end, { expr = true, silent = true })
 -- imap <C-,>   <Cmd>call codeium#CycleCompletions(-1)<CR>
 -- imap <C-x>   <Cmd>call codeium#Clear()<CR>
 
--- Neogit plugin
-vim.keymap.set("n", "<leader>ng", ":Neogit kind=split<CR>")
--- vim.keymap.set("n", "<leader>ngf", ":Neogit kind=floating<CR>")
-
 -- Folding with ufo
 -- vim.o.foldcolumn = "1" -- '0' is not bad
 -- vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value

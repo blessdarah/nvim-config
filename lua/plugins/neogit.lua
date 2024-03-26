@@ -10,6 +10,7 @@ return {
 	config = true,
 
 	-- Neogit plugin
-	vim.keymap.set("n", "<leader>ng", ":Neogit kind=split<CR>"),
+	-- vim.keymap.set("n", "<leader>ng", ":Neogit kind=split<CR>"),
+	vim.keymap.set("n", "<leader>ng", ":Neogit <CR>"),
 	-- vim.keymap.set("n", "<leader>ngf", ":Neogit kind=floating<CR>")
 }
