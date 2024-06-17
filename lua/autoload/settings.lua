@@ -2,7 +2,7 @@ local opt = vim.opt -- for conciseness
 
 opt.display = "lastline"
 opt.hidden = true
-opt.syntax = on
+opt.syntax = "on"
 -- Line numbers
 opt.relativenumber = true
 opt.number = true

@@ -11,6 +11,8 @@ return {
 			"jsonls",
 			"tsserver",
 			"tailwindcss",
+			"csharpls",
+			"bashls",
 		},
 	},
 }

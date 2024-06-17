@@ -11,8 +11,6 @@ return {
 			vim.keymap.set("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>"), -- peek type definition
 			vim.keymap.set("n", "gT", "<cmd>Lspsaga goto_type_definition<CR>"), -- Go to type definition
 			vim.keymap.set({ "n", "v" }, "<leader>ca", "<cmd>Lspsaga code_action<CR>"), -- See available code actions
-			vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>"),
-			vim.keymap.set("n", "gh", "<cmd>Lspsaga lsp_finder<CR>"),
 
 			vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>"), -- smart rename
 			vim.keymap.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>"), -- show  diagnostics for line
@@ -22,10 +20,8 @@ return {
 			vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>"), -- jump to previous diagnostic in buffer
 			vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>"), -- jump to next diagnostic in buffer
 
-			-- keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
-			vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>"), -- show documentation for what is under cursor
+			vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>"), -- show documentation for what is under cursor
 			vim.keymap.set("n", "<leader>o", "<cmd>Lspsaga outline<CR>"), -- see outline on right hand side
-			-- keymap.set({ "n", "t" }, "<C-t>", "<cmd>Lspsaga term_toggle<CR>", opts)
 		})
 	end,
 	dependencies = {

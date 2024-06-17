@@ -13,7 +13,7 @@ return {
 			-- Use a sub-list to run only the first available formatter
 			javascript = { { "prettierd", "prettier" } },
 			php = { "intelephense", "tlint" },
-			blade = { "blade-formatter", "pretty-php", "intelephense", "tlint" },
+			blade = { "intelephense", "blade-formatter", "pretty-php", "tlint" },
 			sql = { "sql-formatter" },
 		},
 	},

@@ -1,4 +1,11 @@
 vim.g.mapleader = ","
+
+vim.g.CtrlSpaceDefaultMappingKey = "<C-space> "
+-- Automatically save workspace
+vim.g.CtrlSpaceLoadLastWorkspaceOnStart = 1
+vim.g.CtrlSpaceSaveWorkspaceOnSwitch = 1
+vim.g.CtrlSpaceSaveWorkspaceOnExit = 1
+
 -- vim.g.indent_guides_enable_on_vim_startup = 1
 local keymap = vim.keymap
 
@@ -27,7 +34,6 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 --clear default highlight after searching a string
 keymap.set("n", ",c", ":nohlsearch<CR>")
-keymap.set("n", ",s", ":wa!<CR>")
 
 -- create new lines before and after line respectively
 keymap.set("n", "oo", "o<Esc>k")
@@ -66,6 +72,7 @@ vim.g.codeium_disable_bindings = 1
 vim.keymap.set("i", "<C-g>", function()
 	return vim.fn["codeium#Accept"]()
 end, { expr = true, silent = true })
+
 -- imap <script><silent><nowait><expr> <C-g> codeium#Accept()
 -- imap <C-;>   <Cmd>call codeium#CycleCompletions(1)<CR>
 -- imap <C-,>   <Cmd>call codeium#CycleCompletions(-1)<CR>
