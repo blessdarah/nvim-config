@@ -11,9 +11,12 @@ return {
 			-- Conform will run multiple formatters sequentially
 			python = { "isort", "black" },
 			-- Use a sub-list to run only the first available formatter
-			javascript = { { "prettierd", "prettier" } },
-			php = { "intelephense", "tlint" },
-			blade = { "intelephense", "blade-formatter", "pretty-php", "tlint" },
+			javascript = { "prettier" },
+			javascriptreact = { "prettier" },
+			typescript = { "prettier" },
+			typescriptreact = { "prettier" },
+			php = { "prettier", "pint", "blade-formatter" },
+			blade = { "prettier", "pint", "intelephense", "blade-formatter" },
 			sql = { "sql-formatter" },
 		},
 	},

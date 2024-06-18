@@ -2,7 +2,9 @@ return {
 	"nvimdev/lspsaga.nvim",
 	config = function()
 		require("lspsaga").setup({
-
+			ui = {
+				sign = false,
+			},
 			-- set keybinds
 			vim.keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>"), -- show definition, references
 			vim.keymap.set("n", "gD", "<cmd>Lspsaga goto_definition<CR>"), -- go to definition

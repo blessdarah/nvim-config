@@ -11,10 +11,11 @@ return {
 		"lifepillar/vim-solarized8",
 		"jsit/toast.vim",
 		"navarasu/onedark.nvim",
+		{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- load the colorscheme here
-			vim.cmd([[colorscheme everforest]])
+			vim.cmd([[colorscheme nord]])
 		end,
 	},
 }
