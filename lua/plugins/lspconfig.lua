@@ -99,6 +99,7 @@ return {
 				"javascriptreact",
 				"typescript",
 				"typescriptreact",
+				"intelephense",
 				"php",
 				"blade",
 				"css",

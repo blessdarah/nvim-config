@@ -12,7 +12,6 @@ return {
 			"lua_ls",
 			"emmet_ls",
 			"intelephense",
-			"csharp_ls",
 			"eslint",
 			"svelte",
 		},

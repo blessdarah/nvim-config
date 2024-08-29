@@ -42,3 +42,9 @@ opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
 
 -- opt.iskeyword:append("-") -- Assume words with dash(-) to be a single word
+--
+vim.filetype.add({
+	pattern = {
+		[".*%.blade%.php"] = "blade",
+	},
+})
