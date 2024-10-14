@@ -15,9 +15,9 @@ return {
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
-			php = { "intelephense", "php-cs-fixer", "pint", "blade-formatter" },
-			blade = { "intelephense", "blade-formatter", "php-cs-fixer" },
-			sql = { "sql-formatter" },
+			php = { "pint", "php_cs_fixer", "blade-formatter" },
+			blade = { "pint", "php_cs_fixer", "blade-formatter" },
+			sql = { "sql_formatter" },
 		},
 	},
 }
