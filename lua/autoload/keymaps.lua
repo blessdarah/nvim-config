@@ -67,16 +67,7 @@ keymap.set("n", ",b", ":Telescope buffers<CR>")
 
 -- vim.keymap.set("n", "<leader>ui", require("dapui").toggle)
 
-vim.g.codeium_disable_bindings = 1
--- vim.keymap.set("i", "<A-RightArrow>", function()
-vim.keymap.set("i", "<C-g>", function()
-	return vim.fn["codeium#Accept"]()
-end, { expr = true, silent = true })
-
--- imap <script><silent><nowait><expr> <C-g> codeium#Accept()
--- imap <C-;>   <Cmd>call codeium#CycleCompletions(1)<CR>
--- imap <C-,>   <Cmd>call codeium#CycleCompletions(-1)<CR>
--- imap <C-x>   <Cmd>call codeium#Clear()<CR>
+-- vim.g.codeium_disable_bindings = 1 -- disable codeium keybindings
 
 -- Folding with ufo
 -- vim.o.foldcolumn = "1" -- '0' is not bad

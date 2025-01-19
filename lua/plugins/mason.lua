@@ -5,7 +5,8 @@ return {
 	build = ":MasonUpdate",
 	opts = {
 		ensure_installed = {
-			"tsserver",
+			"ts_ls",
+			"gopls",
 			"html",
 			"cssls",
 			"tailwindcss",
