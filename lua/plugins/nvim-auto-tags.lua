@@ -1,17 +1,54 @@
 return {
 	"windwp/nvim-ts-autotag",
 	opts = {
-		-- Defaults
-		enable_close = true, -- Auto close tags
-		enable_rename = true, -- Auto rename pairs of tags
-		enable_close_on_slash = false, -- Auto close on trailing </
-	},
-	-- Also override individual filetype configs, these take priority.
-	-- Empty by default, useful if one of the "opts" global settings
-	-- doesn't work well in a specific filetype
-	per_filetype = {
-		["html"] = {
-			enable_close = false,
+		enable = true,
+		filetypes = {
+			"html",
+			"javascript",
+			"typescript",
+			"jsx",
+			"tsx",
+			"svelte",
+			"vue",
+		},
+		autotag = {
+			enable = true,
+			disable = { "xml" },
+			ignore_tags = {
+				"area",
+				"base",
+				"br",
+				"col",
+				"embed",
+				"hr",
+				"img",
+				"input",
+				"link",
+				"meta",
+				"param",
+				"source",
+				"track",
+				"wbr",
+			},
+			ignore_tags_with_attributes = {},
+		},
+		rename = {
+			enable = true,
+			timer = vim.g.ts_autotag_timeout,
+			query = "all",
 		},
 	},
+	config = function(_, opts)
+		opts.autotag.enable_close = true
+		opts.autotag.enable_close_on_slash = false
+		opts.rename.enable = true
+		opts.per_filetype = {
+			["html"] = {
+				autotag = {
+					enable_close = false,
+				},
+			},
+		}
+		require("nvim-ts-autotag").setup(opts)
+	end,
 }

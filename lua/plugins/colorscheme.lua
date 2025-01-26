@@ -1,5 +1,6 @@
 return {
 	{
+		"folke/tokyonight.nvim",
 		"morhetz/gruvbox",
 		"bluz71/vim-nightfly-guicolors",
 		"helbing/aura.nvim",
