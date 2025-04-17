@@ -7,4 +7,4 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 require("lazy-vim")
-vim.cmd("colorscheme nord")
+vim.cmd("colorscheme catppuccin")

@@ -1,5 +1,13 @@
 vim.g.mapleader = ","
 
+-- Define a command to copy the relative path
+vim.api.nvim_create_user_command("CopyRelativePath", function()
+	-- Get the relative path and set it to the clipboard
+	local relative_path = vim.fn.expand("%:p:~")
+	vim.fn.setreg("+", relative_path)
+	print("Copied relative path: " .. relative_path) -- Optional: Print a message
+end, {})
+
 vim.g.CtrlSpaceDefaultMappingKey = "<C-space> "
 -- Automatically save workspace
 vim.g.CtrlSpaceLoadLastWorkspaceOnStart = 1
@@ -8,6 +16,9 @@ vim.g.CtrlSpaceSaveWorkspaceOnExit = 1
 
 -- vim.g.indent_guides_enable_on_vim_startup = 1
 local keymap = vim.keymap
+
+-- Define keymap for copy relative path
+keymap.set("n", "<leader>cp", ":CopyRelativePath<CR>")
 
 -- disable netrw
 vim.g.loaded_netrw = 1
