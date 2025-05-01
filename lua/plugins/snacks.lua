@@ -7,7 +7,7 @@ return {
 	opts = {
 		bigfile = { enabled = true },
 		dashboard = { enabled = false },
-		explorer = { enabled = true },
+		explorer = { enabled = false },
 		indent = { enabled = true },
 		input = { enabled = true },
 		notifier = {
@@ -63,13 +63,13 @@ return {
 			end,
 			desc = "Notification History",
 		},
-		{
-			"<leader>e",
-			function()
-				Snacks.explorer()
-			end,
-			desc = "File Explorer",
-		},
+		-- {
+		-- 	"<leader>e",
+		-- 	function()
+		-- 		Snacks.explorer()
+		-- 	end,
+		-- 	desc = "File Explorer",
+		-- },
 		-- find
 		{
 			"<leader>fb",
@@ -86,7 +86,7 @@ return {
 			desc = "Find Config File",
 		},
 		{
-			"<leader>ff",
+			"<leader>f",
 			function()
 				Snacks.picker.files()
 			end,
@@ -237,14 +237,14 @@ return {
 			desc = "Commands",
 		},
 		{
-			"<leader>sd",
+			"<leader>sD",
 			function()
 				Snacks.picker.diagnostics()
 			end,
 			desc = "Diagnostics",
 		},
 		{
-			"<leader>sD",
+			"<leader>sd",
 			function()
 				Snacks.picker.diagnostics_buffer()
 			end,
