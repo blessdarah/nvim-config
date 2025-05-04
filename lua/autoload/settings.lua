@@ -3,9 +3,14 @@ local opt = vim.opt -- for conciseness
 opt.display = "lastline"
 opt.hidden = true
 opt.syntax = "on"
+
 -- Line numbers
 opt.relativenumber = true
 opt.number = true
+
+-- column width and wrap column
+opt.colorcolumn = "120"
+opt.wrapmargin = 120
 
 -- tabs & indentation
 opt.tabstop = 4

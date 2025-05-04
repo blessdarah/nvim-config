@@ -6,24 +6,15 @@ return {
 		-- or leave it empty to use the default settings
 		-- refer to the configuration section below
 	},
-
-	-- Lua
-	vim.keymap.set("n", "<leader>xx", function()
-		require("trouble").toggle()
-	end),
-	vim.keymap.set("n", "<leader>xw", function()
-		require("trouble").toggle("workspace_diagnostics")
-	end),
-	vim.keymap.set("n", "<leader>xd", function()
-		require("trouble").toggle("document_diagnostics")
-	end),
-	vim.keymap.set("n", "<leader>xq", function()
-		require("trouble").toggle("quickfix")
-	end),
-	vim.keymap.set("n", "<leader>xl", function()
-		require("trouble").toggle("loclist")
-	end),
-	vim.keymap.set("n", "gR", function()
-		require("trouble").toggle("lsp_references")
-	end),
-
+	keys = {
+		-- toggle
+		{ "<leader>xx", "<cmd>TroubleToggle<cr>", desc = "Toggle trouble" },
+		-- toggle and jump to first item
+		{ "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Toggle trouble workspace" },
+		{ "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "Toggle trouble document" },
+		{ "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", desc = "Toggle trouble quickfix" },
+		{ "<leader>xl", "<cmd>TroubleToggle loclist<cr>", desc = "Toggle trouble loclist" },
+		-- jump to next item
+		{ "gR", "<cmd>TroubleToggle lsp_references<cr>", desc = "Toggle trouble lsp_references" },
+	},
+}
