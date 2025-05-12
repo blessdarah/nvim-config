@@ -3,8 +3,9 @@
 - Selected a couple of the best plugins for use in my application
 
 ## How to setup
-I'm using a Mac so make sure to clone the repo to your home directory. 
-If you already have an nvim dir, back it up with `mv nvim nvim.bak` before cloning.
+- I'm using a Mac so make sure to clone the repo to your home directory. 
+- If you already have an nvim dir, back it up with `mv nvim nvim.bak` before cloning.
+- If you're on a Mac, make sure to install ripgrep to allow live grep to work.
 
 ## Tools I use
 - I use Ghostty or Wezterm as my terminal of choice.

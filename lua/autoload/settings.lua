@@ -9,8 +9,8 @@ opt.relativenumber = true
 opt.number = true
 
 -- column width and wrap column
-opt.colorcolumn = "120"
-opt.wrapmargin = 120
+opt.colorcolumn = "80"
+opt.wrapmargin = 80
 
 -- tabs & indentation
 opt.tabstop = 4
