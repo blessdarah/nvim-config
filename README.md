@@ -1,0 +1,17 @@
+# My nvim config
+- Nvim config for coding in Js/Ts, React, Node, PHP/Laravel and more
+- Selected a couple of the best plugins for use in my application
+
+## Things to consider
+- You should consider changing the leader key in `settings.lua` from `comma` to `space`. Space is pretty much a common leader key
+for many people.
+- Consider adding which-key plugin if you want to learn the key bindings when using the config. Each keymap is embedded within
+  the package and works well for me.
+- You might also want to swap out `neogit` for `lazygit` if that's something you find useful.
+
+## Pending plugins to configure
+- Debug plugin.
+- Adding an image preview plugin, although I still think I don't need it 🤫
+- Still not happy with the trouble UI for finding issues in code
+- Formatter not working perfectly when writing html in php code. It just sucks right now. I need to find a work around.
+
