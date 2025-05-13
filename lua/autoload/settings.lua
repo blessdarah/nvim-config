@@ -53,3 +53,9 @@ vim.filetype.add({
 		[".*%.blade%.php"] = "blade",
 	},
 })
+
+-- configure golang formating with gopls
+vim.g.go_fmt_command = "golines"
+vim.g.go_fmt_options = {
+	golines = "-m 128",
+}
