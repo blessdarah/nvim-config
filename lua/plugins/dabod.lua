@@ -7,7 +7,7 @@ return {
 	},
 	config = function()
 		-- Set up DB UI toggle
-		vim.api.nvim_set_keymap("n", "<Leader>db", ":DBUI<CR>", { noremap = true, silent = true })
+		-- vim.api.nvim_set_keymap("n", "<Leader>db", ":DBUI<CR>", { noremap = true, silent = true })
 
 		vim.g.dbs = {
 			-- Add your database connection details here

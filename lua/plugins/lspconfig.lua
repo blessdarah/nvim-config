@@ -15,7 +15,7 @@ return {
 		local keymap = vim.keymap -- for conciseness
 
 		local opts = { noremap = true, silent = true }
-		local on_attach = function(client, bufnr)
+		local on_attach = function(_, bufnr) -- old value in place of _ = client
 			opts.buffer = bufnr
 
 			-- set keybinds
@@ -115,6 +115,8 @@ return {
 					diagnostics = {
 						globals = { "vim" },
 					},
+
+					runtime = { version = "LuaJIT" },
 					workspace = {
 						-- make language server aware of runtime files
 						library = {
@@ -122,6 +124,7 @@ return {
 							[vim.fn.stdpath("config") .. "/lua"] = true,
 						},
 					},
+					telemetry = { enable = false },
 				},
 			},
 		})
