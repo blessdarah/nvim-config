@@ -57,5 +57,16 @@ vim.filetype.add({
 -- configure golang formating with gopls
 vim.g.go_fmt_command = "golines"
 vim.g.go_fmt_options = {
-	golines = "-m 128",
+	golines = "-m 80",
 }
+
+vim.diagnostic.config({
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "",
+			[vim.diagnostic.severity.WARN] = "",
+			[vim.diagnostic.severity.HINT] = "",
+			[vim.diagnostic.severity.INFO] = "",
+		},
+	},
+})

@@ -1,12 +1,5 @@
 vim.g.mapleader = ","
 
-vim.g.CtrlSpaceDefaultMappingKey = "<C-space> "
-
--- Automatically save workspace
-vim.g.CtrlSpaceLoadLastWorkspaceOnStart = 1
-vim.g.CtrlSpaceSaveWorkspaceOnSwitch = 1
-vim.g.CtrlSpaceSaveWorkspaceOnExit = 1
-
 -- vim.g.indent_guides_enable_on_vim_startup = 1
 local keymap = vim.keymap
 

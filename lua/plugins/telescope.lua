@@ -31,7 +31,6 @@ return {
 		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
 		{ "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
 		{ "<leader>fC", "<cmd>Telescope commands<cr>", desc = "Commands" },
-
 		-- go to definition
 		{ "gd", "<cmd>Telescope lsp_definitions<cr>", desc = "Go to Definition" },
 		{ "gD", "<cmd>Telescope lsp_declarations<cr>", desc = "Go to Declaration" },
