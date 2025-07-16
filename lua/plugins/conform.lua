@@ -3,7 +3,7 @@ return {
 	opts = {
 		format_on_save = {
 			-- These options will be passed to conform.format()
-			timeout_ms = 500,
+			timeout_ms = 3000,
 			lsp_fallback = true,
 		},
 		formatters_by_ft = {
@@ -15,9 +15,15 @@ return {
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
-			php = { "pint", "php_cs_fixer", "blade-formatter" },
-			blade = { "pint", "php_cs_fixer", "blade-formatter" },
+			php = { "pint", "blade-formatter" },
+			blade = { "pint", "blade-formatter" },
 			sql = { "sql_formatter" },
+		},
+		formatters = {
+			pint = {
+				timeout_ms = 10000,
+				stdin = false,
+			},
 		},
 	},
 }
