@@ -27,7 +27,7 @@ return {
 	keys = {
 		{ "<leader>f", "<cmd>Telescope find_files theme=dropdown<cr>", desc = "Find Files" }, -- also dropdown or cursor or ivy
 		{ "<leader>r", "<cmd>Telescope live_grep theme=dropdown<cr>", desc = "Live Grep" },
-		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
+		{ "<leader>fb", "<cmd>Telescope buffers theme=dropdown<cr>", desc = "Buffers" },
 		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
 		{ "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
 		{ "<leader>fC", "<cmd>Telescope commands<cr>", desc = "Commands" },

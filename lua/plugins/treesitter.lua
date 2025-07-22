@@ -6,7 +6,7 @@ return {
 		"nvim-treesitter/nvim-treesitter-textobjects",
 		"windwp/nvim-ts-autotag",
 	},
-	config = function(_, opts)
+	config = function()
 		-- import nvim-treesitter plugin
 		local treesitter = require("nvim-treesitter.configs")
 
@@ -34,6 +34,7 @@ return {
 				"bash",
 				"lua",
 				"vim",
+				"go",
 				"dockerfile",
 				"gitignore",
 				"query",
