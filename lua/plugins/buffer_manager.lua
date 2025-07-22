@@ -7,6 +7,7 @@
 --
 -- You can also search for buffers by name, and you can use
 -- the quick menu to open files.
+-- testing something
 return {
 
 	"j-morano/buffer_manager.nvim",

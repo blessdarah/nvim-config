@@ -8,9 +8,7 @@ return {
 		{ "echasnovski/mini.icons", opts = {} },
 		{
 			"FerretDetective/oil-git-signs.nvim",
-			opts = {
-				ft = "oil",
-			},
+			ft = "oil",
 		},
 	},
 	---@module 'oil'
