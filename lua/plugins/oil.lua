@@ -13,7 +13,7 @@ return {
 	},
 	---@module 'oil'
 	---@type oil.SetupOpts
-	setup = function()
+	config = function()
 		require("oil").setup({
 			view_options = {
 				-- show_hidden = true, -- Show hidden files
@@ -83,9 +83,6 @@ return {
 				},
 			},
 		})
-		vim.cmd([[colorscheme oil]]) -- set the theme
-		vim.cmd([[set background=dark]])
-		vim.cmd([[set termguicolors]])
 	end,
 	keys = {
 		vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),

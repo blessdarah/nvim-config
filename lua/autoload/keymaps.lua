@@ -3,9 +3,13 @@ vim.g.mapleader = ","
 -- vim.g.indent_guides_enable_on_vim_startup = 1
 local keymap = vim.keymap
 
--- disable netrw
-vim.g.loaded_netrw = 1
+-- disable netrw vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+keymap.set("n", "<Left>", ":vertical resize -2<CR>")
+keymap.set("n", "<Right>", ":vertical resize +2<CR>")
+keymap.set("n", "<Up>", ":resize +2<CR>")
+keymap.set("n", "<Down>", ":resize -2<CR>")
 
 -- general keykeymaps
 keymap.set("i", ";;", "<Esc>")

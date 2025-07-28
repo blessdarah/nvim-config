@@ -4,6 +4,7 @@ return {
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         { "antosha417/nvim-lsp-file-operations", config = true },
+        "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
     },
     config = function()
@@ -63,7 +64,8 @@ return {
             vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
         end
 
-        mason_lspconfig.setup_handlers({
+        if mason_lspconfig.setup_handlers then
+            mason_lspconfig.setup_handlers({
             function(server_name)
                 lspconfig[server_name].setup({
                     capabilities = capabilities,
@@ -157,5 +159,6 @@ return {
                 })
             end,
         })
+        end
     end,
 }

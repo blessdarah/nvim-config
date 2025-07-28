@@ -5,7 +5,7 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-telescope/telescope.nvim",
     },
-    cmd = { "Artisan", "Composer", "Laravel*" },
+    cmd = { "Artisan", "Composer", "LaravelRoute", "LaravelMake", "LaravelFinder", "LaravelViews", "LaravelConfig", "LaravelMigrations", "LaravelModels", "LaravelControllers" },
     keys = {
         { "<leader>la",  ":Artisan<cr>",            desc = "Laravel Artisan" },
         { "<leader>lc",  ":Composer<cr>",           desc = "Composer" },
@@ -13,7 +13,7 @@ return {
         { "<leader>lm",  ":LaravelMake<cr>",        desc = "Laravel Make" },
         { "<leader>lf",  ":LaravelFinder<cr>",      desc = "Laravel Finder" },
         { "<leader>lv",  ":LaravelViews<cr>",       desc = "Laravel Views" },
-        { "<leader>lc",  ":LaravelConfig<cr>",      desc = "Laravel Config" },
+        { "<leader>lcf", ":LaravelConfig<cr>",      desc = "Laravel Config" },
         { "<leader>lmc", ":LaravelMigrations<cr>",  desc = "Laravel Migrations" },
         { "<leader>lmd", ":LaravelModels<cr>",      desc = "Laravel Models" },
         { "<leader>lct", ":LaravelControllers<cr>", desc = "Laravel Controllers" },
@@ -158,21 +158,9 @@ return {
             -- Register the Blade parser with the Laravel plugin
             blade = {
                 enable = true,
-                executable = "blade-formatter",
-                options = {
-                    -- Optional options for blade-formatter
-                    ["--indent-size"] = 4,
-                    ["--wrap-line-length"] = 120,
-                    ["--wrap-attributes"] = "auto",
-                },
             },
             -- Define Laravel-specific features
             features = {
-                null_ls = {
-                    enable = true,
-                    formatters = { "pint" },
-                    diagnostics = { "phpstan", "psalm" },
-                },
                 route_info = {
                     enable = true,
                     position = "top",
