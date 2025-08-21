@@ -1,4 +1,5 @@
-local opt = vim.opt -- for conciseness
+-- vim: ft=lua
+local opt = vim.opt
 
 opt.display = "lastline"
 opt.hidden = true
@@ -32,7 +33,8 @@ opt.smartcase = true
 opt.cursorline = true
 
 -- cursor shape and appearance
-opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
+opt.guicursor =
+	"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
 -- Appearance
 opt.termguicolors = true
@@ -73,3 +75,8 @@ vim.diagnostic.config({
 		},
 	},
 })
+
+-- create a new command to run claude code
+vim.api.nvim_create_user_command("Claude", function()
+	vim.cmd("FloatermNew --autoclose=0 claude")
+end, {})
