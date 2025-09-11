@@ -15,8 +15,8 @@ return {
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
-			php = { "pint", "blade-formatter" },
-			blade = { "pint", "blade-formatter" },
+			php = { "php-cs-fixer" },
+			blade = { "tlint", "php-cs-fixer", "blade-formatter", stop_after_first = true },
 			sql = { "sql_formatter" },
 		},
 		formatters = {
