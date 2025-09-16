@@ -115,7 +115,7 @@ return {
 	keys = {
 		{
 			"<leader>xx",
-			"<cmd>Trouble diagnostics toggle<cr><C-j>",
+			"<cmd>Trouble diagnostics toggle<cr><c-j>",
 			desc = "Diagnostics (Trouble)",
 		},
 		{
@@ -145,17 +145,17 @@ return {
 		},
 		{
 			"gR",
-			"<cmd>Trouble lsp_references<cr><C-J>",
+			"<cmd>Trouble lsp_references<cr>",
 			desc = "LSP References",
 		},
 		{
 			"gD",
-			"<cmd>Trouble lsp_definitions<cr><C-j>",
+			"<cmd>Trouble lsp_definitions<cr>",
 			desc = "LSP Definitions",
 		},
 		{
 			"gI",
-			"<cmd>Trouble lsp_implementations<cr><C-j>",
+			"<cmd>Trouble lsp_implementations<cr>",
 			desc = "LSP Implementations",
 		},
 		{
