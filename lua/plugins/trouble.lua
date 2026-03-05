@@ -3,8 +3,18 @@ return {
 	cmd = "Trouble",
 	opts = {
 		modes = {
-			preview_float = {
+			diagnostics_float = {
 				mode = "diagnostics",
+				win = {
+					type = "float",
+					relative = "editor",
+					border = "rounded",
+					title = "Diagnostics",
+					title_pos = "center",
+					position = { 0.5, 0.5 },
+					size = { width = 0.6, height = 0.5 },
+					zindex = 200,
+				},
 				preview = {
 					type = "float",
 					relative = "editor",
@@ -115,12 +125,12 @@ return {
 	keys = {
 		{
 			"<leader>xx",
-			"<cmd>Trouble diagnostics toggle<cr><c-j>",
+			"<cmd>Trouble diagnostics_float toggle<cr>",
 			desc = "Diagnostics (Trouble)",
 		},
 		{
 			"<leader>xX",
-			"<cmd>Trouble diagnostics toggle filter.buf=0<cr><c-j>",
+			"<cmd>Trouble diagnostics_float toggle filter.buf=0<cr>",
 			desc = "Buffer Diagnostics (Trouble)",
 		},
 		{
@@ -141,7 +151,7 @@ return {
 		{
 			"<leader>xQ",
 			"<cmd>Trouble qflist toggle<cr><c-j>",
-			desc = "Quickfix List (Trouble)",
+			desc = "Quickfx List (Trouble)",
 		},
 		{
 			"gR",

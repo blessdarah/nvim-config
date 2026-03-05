@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -11,3 +12,6 @@ vim.filetype.add({
 		["http"] = "http",
 	},
 })
+
+-- Set \ to reverse character search after all plugins are loaded
+vim.keymap.set("n", "\\", ",", { noremap = true })
