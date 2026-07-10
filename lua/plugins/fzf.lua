@@ -3,9 +3,9 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {},
 	keys = {
-		{ "<leader>f", "<cmd>FzfLua files<cr>", desc = "Find Files" },
+		{ "<leader>ff", "<cmd>FzfLua files<cr>", desc = "Find Files" },
 		{ "<leader>r", "<cmd>FzfLua live_grep<cr>", desc = "Live Grep" },
-		{ "<leader>fb", "<cmd>FzfLua buffers<cr>", desc = "Buffers" },
+		{ "<leader>f", "<cmd>FzfLua buffers<cr>", desc = "Buffers" },
 		{ "<leader>fh", "<cmd>FzfLua help_tags<cr>", desc = "Help Tags" },
 		{ "<leader>fk", "<cmd>FzfLua keymaps<cr>", desc = "Keymaps" },
 		{ "<leader>fC", "<cmd>FzfLua commands<cr>", desc = "Commands" },

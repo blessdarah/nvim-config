@@ -3,7 +3,6 @@ return {
 		"folke/tokyonight.nvim",
 		"morhetz/gruvbox",
 		"bluz71/vim-nightfly-guicolors",
-		"helbing/aura.nvim",
 		"sainnhe/everforest",
 		"nordtheme/vim",
 		"rebelot/kanagawa.nvim",

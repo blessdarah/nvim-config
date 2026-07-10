@@ -1,4 +1,5 @@
 -- Handle multiple cursors in Neovim
+-- Example: Leader + m to create a selection for selected text or word under the cursor
 return {
 	"smoka7/multicursors.nvim",
 	event = "VeryLazy",
