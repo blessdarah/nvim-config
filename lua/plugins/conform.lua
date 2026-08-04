@@ -7,6 +7,8 @@ return {
 			lsp_fallback = true,
 		},
 		formatters_by_ft = {
+			http = {},
+			rest = {},
 			lua = { "stylua" },
 			-- Conform will run multiple formatters sequentially
 			python = { "isort", "black" },

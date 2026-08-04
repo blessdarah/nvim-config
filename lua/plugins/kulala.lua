@@ -9,5 +9,6 @@ return {
 	opts = {
 		-- your configuration comes here
 		global_keymaps = true,
+		environment_scope = "g",
 	},
 }
