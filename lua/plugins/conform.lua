@@ -7,16 +7,16 @@ return {
 			lsp_fallback = true,
 		},
 		formatters_by_ft = {
-			http = {},
+			http = { "kulala" },
 			rest = {},
 			lua = { "stylua" },
 			-- Conform will run multiple formatters sequentially
 			python = { "isort", "black" },
 			-- Use a sub-list to run only the first available formatter
-			javascript = { "prettier" },
-			javascriptreact = { "prettier" },
-			typescript = { "prettier" },
-			typescriptreact = { "prettier" },
+			javascript = { "biome" },
+			javascriptreact = { "biome" },
+			typescript = { "biome" },
+			typescriptreact = { "biome" },
 			php = { "php-cs-fixer" },
 			blade = { "tlint", "php-cs-fixer", "blade-formatter", stop_after_first = true },
 			sql = { "sql_formatter" },
