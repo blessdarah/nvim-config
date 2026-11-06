@@ -78,5 +78,5 @@ vim.diagnostic.config({
 
 -- create a new command to run claude code
 vim.api.nvim_create_user_command("Claude", function()
-	vim.cmd("FloatermNew --autoclose=0 claude")
+	vim.cmd("terminal claude")
 end, {})

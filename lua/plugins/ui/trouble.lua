@@ -154,21 +154,6 @@ return {
 			desc = "Quickfx List (Trouble)",
 		},
 		{
-			"gR",
-			"<cmd>Trouble lsp_references<cr>",
-			desc = "LSP References",
-		},
-		{
-			"gD",
-			"<cmd>Trouble lsp_definitions<cr>",
-			desc = "LSP Definitions",
-		},
-		{
-			"gI",
-			"<cmd>Trouble lsp_implementations<cr>",
-			desc = "LSP Implementations",
-		},
-		{
 			"gy",
 			"<cmd>Trouble lsp_type_definitions<cr>",
 			desc = "LSP Type Definitions",

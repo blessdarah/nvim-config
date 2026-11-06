@@ -44,6 +44,9 @@ return {
 				"stylua",
 				"isort",
 				"black",
+				"blade-formatter",
+				"sql-formatter",
+				"js-debug-adapter",
 			},
 		})
 	end,

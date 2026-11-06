@@ -8,11 +8,11 @@ return {
 			},
 		})
 	end,
-
-	-- key maps
-	vim.keymap.set("n", "<leader>t", ':lua NTGlobal["terminal"]:toggle()<cr>'),
-	vim.keymap.set("n", "<leader>1", ':lua NTGlobal["terminal"]:open(1)<cr>'),
-	vim.keymap.set("n", "<leader>+", ':lua NTGlobal["window"]:change_height(2)<cr>'),
-	vim.keymap.set("n", "<leader>-", ':lua NTGlobal["window"]:change_height(-2)<cr>'),
-	vim.keymap.set("t", ";;", "<C-\\><C-n>"), -- Map ;; to escape terminal mode
+	keys = {
+		{ "<leader>t", ':lua NTGlobal["terminal"]:toggle()<cr>', desc = "Toggle terminal" },
+		{ "<leader>1", ':lua NTGlobal["terminal"]:open(1)<cr>', desc = "Open terminal 1" },
+		{ "<leader>+", ':lua NTGlobal["window"]:change_height(2)<cr>', desc = "Increase terminal height" },
+		{ "<leader>-", ':lua NTGlobal["window"]:change_height(-2)<cr>', desc = "Decrease terminal height" },
+		{ ";;", "<C-\\><C-n>", mode = "t", desc = "Exit terminal mode" },
+	},
 }

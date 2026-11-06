@@ -24,10 +24,10 @@ keymap.set("i", "/*", "/**/<left><left>")
 -- emmet config
 vim.g.user_emmet_leader_key = ","
 
-keymap.set("n", "<C-H>", "<C-W><C-H>")
-keymap.set("n", "<C-J>", "<C-W><C-J>")
-keymap.set("n", "<C-K>", "<C-W><C-K>")
-keymap.set("n", "<C-L>", "<C-W><C-L>")
+keymap.set("n", "<C-H>", "<C-W><C-H>") -- right
+keymap.set("n", "<C-J>", "<C-W><C-J>") -- down
+keymap.set("n", "<C-K>", "<C-W><C-K>") -- up
+keymap.set("n", "<C-L>", "<C-W><C-L>") -- right
 
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")

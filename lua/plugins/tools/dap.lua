@@ -61,12 +61,14 @@ return {
 		go_dap_config()
 
 		-- configurations for nodejs
+		local mason_registry = require("mason-registry")
+		local js_debug_path = mason_registry.get_package("js-debug-adapter"):get_install_path()
+
 		dap.adapters.node2 = {
 			type = "executable",
 			command = "node",
 			args = {
-				os.getenv("HOME")
-					.. "/.local/share/nvim/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js",
+				js_debug_path .. "/js-debug/src/dapDebugServer.js",
 				"--port",
 				"0",
 			},

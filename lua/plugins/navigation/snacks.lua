@@ -115,7 +115,7 @@ return {
 
 		-- Quickfix
 		{
-			"<leader>ca",
+			"<leader>qf",
 			function()
 				Snacks.picker.qflist()
 			end,

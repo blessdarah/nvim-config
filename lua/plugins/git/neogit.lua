@@ -10,5 +10,7 @@ return {
 		"echasnovski/mini.pick", -- optional
 	},
 	config = true,
-	vim.keymap.set("n", "<leader>ng", ":Neogit <CR>"),
+	keys = {
+		{ "<leader>ng", "<cmd>Neogit<CR>", desc = "Open Neogit" },
+	},
 }
